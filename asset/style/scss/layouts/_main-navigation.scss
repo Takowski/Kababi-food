@@ -1,0 +1,78 @@
+.main {
+    height: 100vh;
+    padding: 10vh;
+    background-image: url("/asset/img/slider/img_bg_slider_home01.jpg");
+    background-color: black;
+    display: block;
+    background-size: cover;
+    color: $color-title;
+    text-transform: $caps;
+    font-family: $font-stack;
+    a {
+        color: $color-title;
+        text-decoration: none;
+        text-align: center;
+        justify-self: center;
+    }
+    .navbar {
+        display: grid;
+        grid-gap: 10vh 10vh;
+        grid-template-columns: auto auto auto;
+        height: auto;
+        .nav {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            height: 5%;
+        }
+        .reservation {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column: 6/8;
+            justify-content: end;
+            grid-gap: 1.5em;
+            height: 5%;
+            .book {
+                border-radius: 5px;
+                border: none;
+                background-color: #C8A96A;
+                font-weight: bold;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            .arrow {
+                width: 2vh;
+                height: 2vh;
+                filter: invert(100%);
+            }
+        }        
+    }
+    .intro {
+        display: grid;
+        h1 {
+            font-size: 18vh;
+            font-weight: normal;
+            text-align: left;
+            display: block;
+            width: 50%;
+            line-height: 1em;
+            img.quality {
+                object-position: right top;
+                position: relative;                
+                }
+            }
+        .explore {
+            border: white solid 0.1vh;
+            font-weight: bold;
+            padding: 15px 32px;
+            text-align: left;
+            font-size: 10px;
+            .arrow {
+                width: 2vh;
+                height: 2vh;
+                filter: invert(100%);
+            }
+        }
+    }
+}
