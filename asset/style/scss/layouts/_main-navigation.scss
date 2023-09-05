@@ -1,7 +1,7 @@
 .main {
     height: 100vh;
     padding: 10vh;
-    background-image: url("/asset/img/slider/img_bg_slider_home01.jpg");
+    background-image: url("../../../img/slider/img_bg_slider_home01.jpg");
     background-color: black;
     display: block;
     background-size: cover;
@@ -42,8 +42,8 @@
                 padding-right: 30px;
             }
             .arrow {
-                width: 2vh;
-                height: 2vh;
+                width: 10%;
+                height: 10%;
                 filter: invert(100%);
             }
         }        
