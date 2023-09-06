@@ -1,14 +1,83 @@
 footer {
-	width: 100%;
-	background-image: url("/asset/img/footer/img-ng-footer.jpg");
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-		figure {
-			img{
-				width: 50%;
-				height: auto;
+		width: 100%;
+		background-image: url("/asset/img/footer/img-ng-footer.jpg");
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 5vw;
+			figure {
+				img{
+					width: 50%;
+					height: auto;
+				}
 			}
-		}
-	}
+				article{
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					align-items: center;
+					padding: 5vw;
+
+						ul {
+							display: flex;
+							flex-direction: column;
+							gap: 1vw;
+
+								
+							li {
+								list-style: none;
+								margin: 0 1em;
+								line-height: 2vw;
+								color: $color-footer;
+								h3 {
+									color: $color-footer;
+									text-decoration: none;
+									
+									}
+								}
+							 }
+							.Newsletters {
+								max-width: 20vw;
+								display: flex;
+								flex-direction: column;
+								gap: 1vw;
+								align-content: flex-start;
+								background-color: blueviolet;
+
+								.form {
+									display: flex;
+									flex-direction: row;
+									align-items: flex-end;
+									justify-content: flex-end;
+
+										input {
+											width: 20vw;
+											height: 5vw;
+											background:white;
+											color: red;
+											padding: 1vw 1.5vw;
+											font-size: 1.3vw;
+											outline: none;
+												}
+										button {
+											width: 5vw;
+											height: 5vw;
+											background:gold;
+											transition: all .3s ease;
+											flex-direction: row;
+											cursor: pointer;
+												}	
+											}
+
+										}			
+									}		
+								}
+							
+						
+						
+						
+				
+							
+						
+
