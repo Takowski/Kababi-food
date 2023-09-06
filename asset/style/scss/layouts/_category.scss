@@ -1,18 +1,21 @@
 .category {
-    height: 200vh;
     font-family: $font-stack;
     text-transform: $caps;
+    background-image: linear-gradient(to bottom, rgba(250, 246, 240, 0.6) 0%, rgba(250, 246, 240, 0.6) 80%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.6) 100%),
+    url("/asset/img/banner/imgbgcategory.jpg");
+    //linear-gradient(to bottom, #FAF6F0 0%, #FAF6F0 80%, white 80%, white 100%), url("/asset/img/banner/imgbgcategory.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    //filter: opacity(100%);
+    //background-blend-mode: luminosity;
+    //background: linear-gradient(to bottom, #FAF6F0 0%, #FAF6F0 80%, white 80%, white 100%);
+    height:100%;
 
-    .background {
-        background-image: url("/asset/img/banner/imgbgcategory.jpg");
-        z-index:-1;
-        position:absolute;
-    }
-    .filigram {
+    .watermark {
         font-size: 30vh;
         color: #F5EEE3;
         position: absolute;
-        z-index: -1;
+        z-index: 0;
     }
 
     .title {
@@ -23,6 +26,7 @@
         font-weight: normal;
         padding-top: 55px;
         margin-bottom: 0px;
+        margin-top: 0px;
     }
 
     .subtitle {
@@ -32,6 +36,7 @@
         text-transform: none;
         text-align: center;
         margin-top: 0%;
+        z-index:1;
     }
 
     .menu {

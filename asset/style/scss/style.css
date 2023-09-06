@@ -328,20 +328,18 @@ body {
 }
 
 .category {
-  height: 200vh;
   font-family: "Cormorant Infant", serif;
   text-transform: uppercase;
+  background-image: linear-gradient(to bottom, rgba(250, 246, 240, 0.6) 0%, rgba(250, 246, 240, 0.6) 80%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.6) 100%), url("/asset/img/banner/imgbgcategory.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
 }
-.category .background {
-  background-image: url("/asset/img/banner/imgbgcategory.jpg");
-  z-index: -1;
-  position: absolute;
-}
-.category .filigram {
+.category .watermark {
   font-size: 30vh;
   color: #F5EEE3;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
 }
 .category .title {
   text-align: center;
@@ -351,6 +349,7 @@ body {
   font-weight: normal;
   padding-top: 55px;
   margin-bottom: 0px;
+  margin-top: 0px;
 }
 .category .subtitle {
   padding-left: 40%;
@@ -359,6 +358,7 @@ body {
   text-transform: none;
   text-align: center;
   margin-top: 0%;
+  z-index: 1;
 }
 .category .menu {
   display: grid;
@@ -408,13 +408,9 @@ body {
   padding-bottom: 9em;
 }
 
-.about {
-  padding-top: 2%;
-}
-.about .us .filigram {
+.about .us .watermark {
   font-size: 30vh;
   color: #F5EEE3;
-  position: absolute;
   z-index: -1;
   font-family: "Cormorant Infant", serif;
   text-transform: uppercase;
@@ -432,6 +428,7 @@ body {
   font-weight: none;
   padding-top: 3%;
   margin-bottom: 0px;
+  position: absolute;
 }
 .about .us .title .quality {
   float: right;
@@ -489,9 +486,9 @@ body {
 
 .special-offer {
   background-color: #FAF6F0;
-  z-index: -1;
+  filter: opacity(100%);
 }
-.special-offer .offer .filigram {
+.special-offer .offer .watermark {
   font-size: 30vh;
   color: #F5EEE3;
   z-index: -1;
