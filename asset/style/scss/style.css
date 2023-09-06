@@ -335,30 +335,36 @@ body {
   background-repeat: no-repeat;
   height: 100%;
 }
-.category .watermark {
-  font-size: 30vh;
+.category .head {
+  overflow: hidden;
+}
+.category .head .watermark {
+  font-size: 160px;
   color: #F5EEE3;
   position: absolute;
   z-index: 0;
 }
-.category .title {
+.category .head .title {
   text-align: center;
   padding-left: 20%;
   padding-right: 20%;
   font-size: 8vh;
   font-weight: normal;
-  padding-top: 55px;
+  padding-top: 60px;
   margin-bottom: 0px;
   margin-top: 0px;
+  z-index: 2;
+  position: relative;
 }
-.category .subtitle {
+.category .head .subtitle {
   padding-left: 40%;
   padding-right: 40%;
   font-weight: normal;
   text-transform: none;
   text-align: center;
   margin-top: 0%;
-  z-index: 1;
+  z-index: 2;
+  position: relative;
 }
 .category .menu {
   display: grid;
@@ -369,12 +375,12 @@ body {
   color: black;
   text-align: center;
   background-color: white;
-  padding: 5vh;
-  padding-left: 3vh;
-  padding-right: 3vh;
+  width: 20vh;
+  height: 20vh;
+  padding: 3vh;
   text-transform: none;
-  height: 14vh;
-  width: 16vh;
+  justify-content: center;
+  align-items: center;
 }
 .category .menu .grid-menu .arrow {
   width: 2vh;
@@ -386,49 +392,78 @@ body {
 .category .menu .grid-menu a {
   text-decoration: none;
   text-align: center;
+  color: black;
 }
 .category .menu .grid-menu p {
   margin: 1vh;
+  margin-bottom: 2vh;
 }
-.category .plates {
+.category .menu .grid-menu:hover {
+  color: white;
+  background-color: #C8A96A;
+}
+.category .menu .grid-menu:hover .arrow {
+  width: 2vh;
+  height: 2vh;
+  filter: invert(100%);
+}
+.category .menu .grid-menu:hover .illu {
+  filter: brightness(0%) invert(100%);
+}
+.category .menu .grid-menu:hover a {
+  color: white;
+  text-decoration: none;
+}
+.category .content {
+  padding-top: 50px;
+  padding-bottom: 350px;
+  position: relative;
+  margin-bottom: 200px;
+}
+.category .content .plates {
   padding-left: 13%;
   padding-right: 12%;
+  position: absolute;
+  bottom: -150px;
 }
-.category .plates .crepes {
+.category .content .plates .crepes {
   width: 15em;
   padding-bottom: 5em;
 }
-.category .plates .bowl {
+.category .content .plates .bowl {
   width: 30em;
   border: solid white 2em;
   border-radius: 50%;
 }
-.category .plates .eggs {
+.category .content .plates .eggs {
   width: 20em;
   padding-bottom: 9em;
 }
 
 .about .us .watermark {
-  font-size: 30vh;
+  font-size: 160px;
   color: #F5EEE3;
+  position: absolute;
   z-index: -1;
   font-family: "Cormorant Infant", serif;
   text-transform: uppercase;
   font-size: 15hv;
 }
 .about .us .title {
-  padding-top: 20vh;
   text-align: center;
-  padding-left: 30%;
+  padding-left: 20%;
   padding-right: 20%;
-  font-size: 8vh;
-  font-weight: normal;
+  font-size: 30px;
+  padding-top: 15px;
+  z-index: 2;
+  position: relative;
+}
+.about .us .title h2 {
   font-family: "Cormorant Infant", serif;
   text-transform: uppercase;
-  font-weight: none;
-  padding-top: 3%;
+  font-weight: normal;
+  margin-top: 45px;
   margin-bottom: 0px;
-  position: absolute;
 }
 .about .us .title .quality {
   float: right;
@@ -485,11 +520,13 @@ body {
 }
 
 .special-offer {
-  background-color: #FAF6F0;
+  background: url("/asset/img/our-menu/imgbg-our-menu.jpg") right no-repeat, url("/asset/img/our-menu/img2bg-our-menu.jpg") left bottom no-repeat, #FAF6F0;
+  background-size: 540px, auto;
   filter: opacity(100%);
+  height: 1000px;
 }
 .special-offer .offer .watermark {
-  font-size: 30vh;
+  font-size: 160px;
   color: #F5EEE3;
   z-index: -1;
   position: absolute;
@@ -503,7 +540,7 @@ body {
   padding-right: 20%;
   font-size: 8vh;
   font-weight: normal;
-  padding-top: 55px;
+  padding-top: 110px;
   margin-bottom: 0px;
   font-family: "Cormorant Infant", serif;
   font-weight: normal;
@@ -557,10 +594,51 @@ body {
   justify-content: center;
   align-self: center;
 }
-.special-offer .offer .Bread {
-  float: right;
+
+.gallery {
+  height: 1200px;
+}
+.gallery .header {
+  height: 200px;
+}
+.gallery .header .watermark {
+  font-size: 160px;
+  color: #F5EEE3;
+  position: absolute;
   z-index: -1;
+  font-family: "Cormorant Infant", serif;
+  text-transform: uppercase;
+}
+.gallery .header .title {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 35px;
+  padding-top: 15px;
+  z-index: 1;
   position: relative;
+}
+.gallery .header h2 {
+  font-family: "Cormorant Infant", serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-top: 60px;
+  margin-top: 45px;
+  margin-bottom: 0px;
+}
+.gallery .header .subtitle {
+  padding-left: 40%;
+  padding-right: 40%;
+  font-weight: normal;
+  text-transform: none;
+  text-align: center;
+  font-family: "Cormorant Infant", serif;
+  font-weight: none;
+  margin-top: 0px;
+}
+.gallery .picutres {
+  display: inline-block;
+  text-align: center;
 }
 
 footer {

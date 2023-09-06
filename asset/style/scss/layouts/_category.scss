@@ -10,51 +10,57 @@
     //background-blend-mode: luminosity;
     //background: linear-gradient(to bottom, #FAF6F0 0%, #FAF6F0 80%, white 80%, white 100%);
     height:100%;
+    .head {
+        overflow:hidden;
+        .watermark {
+            font-size: 160px;
+            color: #F5EEE3;
+            position: absolute;
+            z-index: 0;
+        }
 
-    .watermark {
-        font-size: 30vh;
-        color: #F5EEE3;
-        position: absolute;
-        z-index: 0;
-    }
+        .title {
+            text-align: center;
+            padding-left: 20%;
+            padding-right: 20%;
+            font-size: 8vh;
+            font-weight: normal;
+            padding-top: 60px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            z-index:2;
+            position:relative;
+        }
 
-    .title {
-        text-align: center;
-        padding-left: 20%;
-        padding-right: 20%;
-        font-size: 8vh;
-        font-weight: normal;
-        padding-top: 55px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-
-    .subtitle {
-        padding-left: 40%;
-        padding-right: 40%;
-        font-weight: normal;
-        text-transform: none;
-        text-align: center;
-        margin-top: 0%;
-        z-index:1;
+        .subtitle {
+            padding-left: 40%;
+            padding-right: 40%;
+            font-weight: normal;
+            text-transform: none;
+            text-align: center;
+            margin-top: 0%;
+            z-index:2;
+            position:relative;
+        }
     }
 
     .menu {
         display: grid;
         grid-template-columns: auto auto auto auto auto auto;
         padding: 5%;
+        
 
         .grid-menu {
             color: black;
             text-align: center;
             background-color: white;
-            padding: 5vh;
-            padding-left: 3vh;
-            padding-right: 3vh;
+            width:20vh;
+            height:20vh;
+            padding:3vh;
             text-transform: none;
-            height: 14vh;
-            width: 16vh;
-
+            justify-content: center;
+            align-items: center;
+            
             .arrow {
                 width: 2vh;
                 height: 2vh;
@@ -62,34 +68,61 @@
 
             .illu {
                 height: 5vh;
-
             }
 
             a {
                 text-decoration: none;
                 text-align: center;
+                color: black;
             }
             p {
                 margin: 1vh;
+                margin-bottom: 2vh;
             }
+            &:hover {
+                color:white;
+                background-color: #C8A96A;
+                .arrow {
+                    width: 2vh;
+                    height: 2vh;
+                    filter: invert(100%);
+                }
+                .illu {
+                    filter:brightness(0%) invert(100%);
+                }
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+
         }
     }
     
-    .plates {
-        padding-left: 13%;
-        padding-right: 12%;
-        .crepes {
-            width: 15em;
-            padding-bottom: 5em;
-        }
-        .bowl {
-            width: 30em;
-            border: solid white 2em;
-            border-radius: 50%;
-        }
-        .eggs {
-            width: 20em;
-            padding-bottom: 9em;
+    .content {
+        padding-top:50px;
+        padding-bottom: 350px;
+        position: relative;
+        margin-bottom:200px;
+        //autre méthode => faire monter l'image par la section suivante (évite les problèmes de responsives)
+        .plates {
+            padding-left: 13%;
+            padding-right: 12%;
+            position:absolute;
+            bottom: -150px;
+            .crepes {
+                width: 15em;
+                padding-bottom: 5em;
+            }
+            .bowl {
+                width: 30em;
+                border: solid white 2em;
+                border-radius: 50%;
+            }
+            .eggs {
+                width: 20em;
+                padding-bottom: 9em;
+            }
         }
     }
 }

@@ -1,0 +1,45 @@
+.gallery {
+    height:1200px;
+    .header {
+        height:200px;
+        .watermark {
+            font-size: 160px;
+            color: #F5EEE3;
+            position: absolute;
+            z-index: -1;
+            font-family: $font-stack;
+            text-transform: $caps;
+        }
+        .title {
+            text-align: center;
+            padding-left: 20%;
+            padding-right: 20%;
+            font-size: 35px;
+            padding-top: 15px;
+            z-index:1;
+            position:relative;
+        }
+        h2 {
+            font-family: $font-stack;
+            text-transform: $caps;
+            font-weight: normal;
+            padding-top:60px;
+            margin-top: 45px;
+            margin-bottom: 0px;
+        }
+        .subtitle {
+            padding-left: 40%;
+            padding-right: 40%;
+            font-weight: normal;
+            text-transform: none;
+            text-align: center;
+            font-family: $font-stack;
+            font-weight: none;
+            margin-top: 0px;
+        }
+    }
+    .picutres {
+        display: inline-block;
+        text-align: center;
+    }
+}
