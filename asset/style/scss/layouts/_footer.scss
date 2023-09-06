@@ -1,31 +1,14 @@
 footer {
-	width: 94%;
+	width: 100%;
+	background-image: url("/asset/img/footer/img-ng-footer.jpg");
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
-	gap: 5vh;
-	background-color:red;
-	color: hsla(0, 0%, 100%, 0.5);
-	padding: 5% 5%;
-	
-			h2 {
-				figure {
-						img {
-							width: 10vw;
-						}
-					}
-				}
-	
-				article {
-					background-color: blue;
-					width: 100%;
-					display: flex;
-					flex-direction: row;
-					align-items: center;
-					justify-content: center;
-					flex-wrap: wrap;
-					gap: 5vw;
-					padding: 2vh 0;}
-
-				}
+	align-items: center;
+		figure {
+			img{
+				width: 50%;
+				height: auto;
+			}
+		}
+	}
