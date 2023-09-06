@@ -21,7 +21,7 @@
             font-family: $font-stack;
             text-transform: $caps;
             font-weight: none;
-            padding-top: 5%;
+            padding-top: 3%;
             margin-bottom: 0px;
             .quality {
                 float: right;
@@ -48,18 +48,17 @@
             padding-top:2%;
             padding-right: 20%;
             padding-bottom: 2%;
-            grid-gap: 5em;
-            width: 60%;
+            grid-gap: 1em;
+            width: 100%;
             .lutin {
-                width: 50vh;
+                width: 100%;
             }
             .discover {
                 .latin {
                     font-family: $font-stack;
                     font-weight: none;
                     font-size: 2em;
-                    padding-bottom: 5%;
-                    padding-top: 5%;
+                    width: 85%;
                 }
                 .button {
                     border-radius: 5px;

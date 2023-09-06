@@ -2,10 +2,11 @@
     height: 200vh;
     font-family: $font-stack;
     text-transform: $caps;
-    padding-top: 2%;
 
     .background {
-        background: url("/asset/img/banner/imgbgcategory.jpg");
+        background-image: url("/asset/img/banner/imgbgcategory.jpg");
+        z-index:-1;
+        position:absolute;
     }
     .filigram {
         font-size: 30vh;
