@@ -379,6 +379,8 @@ body {
 footer {
   width: 100%;
   background-image: url("/asset/img/footer/img-ng-footer.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -393,12 +395,15 @@ footer article {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: space-around;
   padding: 5vw;
+  border-bottom: 1px solid white;
 }
 footer article ul {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
   gap: 1vw;
 }
 footer article ul li {
@@ -412,12 +417,12 @@ footer article ul li h3 {
   text-decoration: none;
 }
 footer article .Newsletters {
-  max-width: 20vw;
+  max-width: 26vw;
   display: flex;
   flex-direction: column;
   gap: 1vw;
   align-content: flex-start;
-  background-color: blueviolet;
+  justify-content: flex-start;
 }
 footer article .Newsletters .form {
   display: flex;
@@ -426,19 +431,47 @@ footer article .Newsletters .form {
   justify-content: flex-end;
 }
 footer article .Newsletters .form input {
-  width: 20vw;
-  height: 5vw;
+  width: 27vw;
+  height: 3vw;
   background: white;
   color: red;
-  padding: 1vw 1.5vw;
+  padding: 0;
   font-size: 1.3vw;
   outline: none;
 }
 footer article .Newsletters .form button {
-  width: 5vw;
-  height: 5vw;
+  width: 3vw;
+  height: 3vw;
   background: gold;
   transition: all 0.3s ease;
   flex-direction: row;
   cursor: pointer;
+}
+footer .Copyright {
+  max-height: 5vh;
+  padding: 0vw;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20vw;
+  color: white;
+  border-bottom: 0px solid white;
+}
+footer .Copyright div {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+footer .Copyright div p {
+  justify-self: flex-start;
+}
+footer .Copyright div img {
+  margin-top: -6vh;
+}
+footer .Copyright ul {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }/*# sourceMappingURL=style.css.map */

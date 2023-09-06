@@ -1,6 +1,8 @@
 footer {
 		width: 100%;
 		background-image: url("/asset/img/footer/img-ng-footer.jpg");
+		background-repeat: no-repeat;
+		background-color: black;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -16,12 +18,16 @@ footer {
 					display: flex;
 					flex-wrap: wrap;
 					justify-content: center;
-					align-items: center;
-					padding: 5vw;
+					align-items: space-around;
+					padding:5vw;
+					border-bottom: 1px solid $color-footer;
+				
 
 						ul {
-							display: flex;
-							flex-direction: column;
+							display:flex;
+							flex-direction:column;
+							justify-content: flex-start;
+							align-content: flex-start;
 							gap: 1vw;
 
 								
@@ -38,31 +44,31 @@ footer {
 								}
 							 }
 							.Newsletters {
-								max-width: 20vw;
+								max-width: 26vw;
 								display: flex;
 								flex-direction: column;
 								gap: 1vw;
 								align-content: flex-start;
-								background-color: blueviolet;
-
+								justify-content: flex-start;
+							
 								.form {
-									display: flex;
-									flex-direction: row;
-									align-items: flex-end;
-									justify-content: flex-end;
+									display:flex;
+									flex-direction:row;
+									align-items:flex-end;
+									justify-content:flex-end;
 
 										input {
-											width: 20vw;
-											height: 5vw;
+											width: 27vw;
+											height: 3vw;
 											background:white;
 											color: red;
-											padding: 1vw 1.5vw;
+											padding: 0;
 											font-size: 1.3vw;
 											outline: none;
 												}
 										button {
-											width: 5vw;
-											height: 5vw;
+											width: 3vw;
+											height: 3vw;
 											background:gold;
 											transition: all .3s ease;
 											flex-direction: row;
@@ -72,8 +78,45 @@ footer {
 
 										}			
 									}		
-								}
 							
+				.Copyright {
+					max-height: 5vh;
+					padding: 0vw;
+					display: inline-flex;
+					flex-direction: row;
+					justify-content: space-between;
+					gap: 20vw;
+				
+
+
+					
+					
+					color: $color-footer;
+					border-bottom: 0px solid $color-footer;
+					div {
+						align-self: flex-start;
+						display : flex;
+						flex-direction: row;
+						align-items: start;
+					
+
+						p {justify-self: flex-start;}
+
+						img{
+						    margin-top: -6vh;
+						}
+
+					}
+					ul {
+						color: $color-footer;
+						display: flex;
+						flex-direction: row;
+						justify-content: flex-end;
+						
+						
+					}
+					}
+				}			
 						
 						
 						
