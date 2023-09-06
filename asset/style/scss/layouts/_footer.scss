@@ -1,0 +1,14 @@
+footer {
+	width: 100%;
+	background-image: url("/asset/img/footer/img-ng-footer.jpg");
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+		figure {
+			img{
+				width: 50%;
+				height: auto;
+			}
+		}
+	}
