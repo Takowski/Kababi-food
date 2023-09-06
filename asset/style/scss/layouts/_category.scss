@@ -1,0 +1,63 @@
+.category {
+    background: url("/asset/img/banner/imgbgcategory.jpg");
+    background-color: #FAF6F0;
+    height: 100vh;
+    font-family: $font-stack;
+    text-transform: $caps;
+    padding-top: 20vh;
+
+    .filigram {
+        font-size: 30vh;
+        color: #F5EEE3;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .title {
+        text-align: center;
+        padding-left: 20%;
+        padding-right: 20%;
+        font-size: 8vh;
+        font-weight: normal;
+    }
+
+    .subtitle {
+        padding-left: 42%;
+        padding-right: 40%;
+        font-weight: normal;
+        text-transform: none;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-gap: 5vh;
+        background-color: #FAF6F0;
+        padding: 20vh;
+
+        .grid-menu {
+            color: black;
+            text-align: center;
+            background-color: white;
+            padding: 5vh;
+            text-transform: none;
+            height: 10vh;
+            width: 10vh;
+
+            .arrow {
+                width: 2vh;
+                height: 2vh;
+            }
+
+            .illu {
+                height: 5vh;
+
+            }
+
+            a {
+                text-decoration: none;
+                text-align: center;
+            }
+        }
+    }
+}
