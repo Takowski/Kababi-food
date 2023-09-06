@@ -308,13 +308,94 @@ template {
   display: none;
 }
 
-.category {
-  background: url("/asset/img/banner/imgbgcategory.jpg");
-  background-color: #FAF6F0;
-  height: 100vh;
+.about {
+  padding-top: 2%;
+}
+.about .us .filigram {
+  font-size: 30vh;
+  color: #F5EEE3;
+  position: absolute;
+  z-index: -1;
   font-family: "Cormorant Infant", serif;
   text-transform: uppercase;
+  font-size: 15hv;
+}
+.about .us .title {
   padding-top: 20vh;
+  text-align: center;
+  padding-left: 30%;
+  padding-right: 20%;
+  font-size: 8vh;
+  font-weight: normal;
+  font-family: "Cormorant Infant", serif;
+  text-transform: uppercase;
+  font-weight: none;
+  padding-top: 5%;
+  margin-bottom: 0px;
+}
+.about .us .title .quality {
+  float: right;
+  width: 15%;
+  padding-bottom: 10%;
+}
+.about .us .subtitle {
+  padding-left: 40%;
+  padding-right: 40%;
+  font-weight: normal;
+  text-transform: none;
+  text-align: center;
+  font-family: "Cormorant Infant", serif;
+  font-weight: none;
+  margin-top: 0px;
+}
+.about .us .abtus {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 20%;
+  padding-top: 2%;
+  padding-right: 20%;
+  padding-bottom: 2%;
+  grid-gap: 5em;
+  width: 60%;
+}
+.about .us .abtus .lutin {
+  width: 50vh;
+}
+.about .us .abtus .discover .latin {
+  font-family: "Cormorant Infant", serif;
+  font-weight: none;
+  font-size: 2em;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+.about .us .abtus .discover .button {
+  border-radius: 5px;
+  background-color: #C8A96A;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  color: white;
+}
+.about .us .abtus .discover .button .arrow {
+  width: 2%;
+  height: 2%;
+  filter: invert(100%);
+}
+
+.category {
+  height: 200vh;
+  font-family: "Cormorant Infant", serif;
+  text-transform: uppercase;
+  padding-top: 2%;
+}
+.category .background {
+  background: url("/asset/img/banner/imgbgcategory.jpg");
 }
 .category .filigram {
   font-size: 30vh;
@@ -328,28 +409,32 @@ template {
   padding-right: 20%;
   font-size: 8vh;
   font-weight: normal;
+  padding-top: 55px;
+  margin-bottom: 0px;
 }
 .category .subtitle {
-  padding-left: 42%;
+  padding-left: 40%;
   padding-right: 40%;
   font-weight: normal;
   text-transform: none;
+  text-align: center;
+  margin-top: 0%;
 }
 .category .menu {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
-  grid-gap: 5vh;
-  background-color: #FAF6F0;
-  padding: 20vh;
+  padding: 5%;
 }
 .category .menu .grid-menu {
   color: black;
   text-align: center;
   background-color: white;
   padding: 5vh;
+  padding-left: 3vh;
+  padding-right: 3vh;
   text-transform: none;
-  height: 10vh;
-  width: 10vh;
+  height: 14vh;
+  width: 16vh;
 }
 .category .menu .grid-menu .arrow {
   width: 2vh;
@@ -362,12 +447,31 @@ template {
   text-decoration: none;
   text-align: center;
 }
+.category .menu .grid-menu p {
+  margin: 1vh;
+}
+.category .plates {
+  padding-left: 13%;
+  padding-right: 12%;
+}
+.category .plates .crepes {
+  width: 15em;
+  padding-bottom: 5em;
+}
+.category .plates .bowl {
+  width: 30em;
+  border: solid white 2em;
+  border-radius: 50%;
+}
+.category .plates .eggs {
+  width: 20em;
+  padding-bottom: 9em;
+}
 
 .main {
   height: 100vh;
   padding: 10vh;
-  background-image: url("../../../img/slider/img_bg_slider_home01.jpg");
-  background-color: black;
+  background-image: url("/asset/img/slider/img_bg_slider_home01.jpg");
   display: block;
   background-size: cover;
   color: white;
