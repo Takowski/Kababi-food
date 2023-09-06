@@ -310,6 +310,57 @@ template {
 
 .category {
   background: url("/asset/img/banner/imgbgcategory.jpg");
+  background-color: #FAF6F0;
+  height: 100vh;
+  font-family: "Cormorant Infant", serif;
+  text-transform: uppercase;
+  padding-top: 20vh;
+}
+.category .filigram {
+  font-size: 30vh;
+  color: #F5EEE3;
+  position: absolute;
+  z-index: -1;
+}
+.category .title {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 8vh;
+  font-weight: normal;
+}
+.category .subtitle {
+  padding-left: 42%;
+  padding-right: 40%;
+  font-weight: normal;
+  text-transform: none;
+}
+.category .menu {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 5vh;
+  background-color: #FAF6F0;
+  padding: 20vh;
+}
+.category .menu .grid-menu {
+  color: black;
+  text-align: center;
+  background-color: white;
+  padding: 5vh;
+  text-transform: none;
+  height: 10vh;
+  width: 10vh;
+}
+.category .menu .grid-menu .arrow {
+  width: 2vh;
+  height: 2vh;
+}
+.category .menu .grid-menu .illu {
+  height: 5vh;
+}
+.category .menu .grid-menu a {
+  text-decoration: none;
+  text-align: center;
 }
 
 .main {
