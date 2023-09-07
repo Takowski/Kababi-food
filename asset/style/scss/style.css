@@ -404,22 +404,21 @@ body {
   color: black;
   text-align: center;
   background-color: white;
-  width: 146px;
-  height: 146px;
-  padding: 22px;
+  width: 20vh;
+  height: 20vh;
+  padding: 3vh;
   text-transform: none;
   justify-content: center;
   align-items: center;
 }
 .category .menu .grid-menu .arrow {
-  width: 15px;
-  height: 15px;
+  width: 2vh;
+  height: 2vh;
 }
 .category .menu .grid-menu .illu {
-  height: 36.5px;
-  display: grid;
+  height: 5vh;
 }
-.category .menu .grid-menu .select {
+.category .menu .grid-menu a {
   text-decoration: none;
   text-align: center;
   color: black;
@@ -440,7 +439,7 @@ body {
 .category .menu .grid-menu:hover .illu {
   filter: brightness(0%) invert(100%);
 }
-.category .menu .grid-menu:hover .select {
+.category .menu .grid-menu:hover a {
   color: white;
   text-decoration: none;
 }
@@ -467,7 +466,6 @@ body {
   width: 15em;
   margin-bottom: -35vh;
   padding-bottom: 5em;
-  margin-bottom: -35vh;
 }
 .category .content .plates .bowl {
   width: 30em;
@@ -479,7 +477,6 @@ body {
   width: 20em;
   margin-bottom: -45vh;
   padding-bottom: 9em;
-  margin-bottom: -45vh;
 }
 
 .about .us .watermark {
