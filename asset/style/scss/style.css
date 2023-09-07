@@ -359,7 +359,7 @@ body {
   text-align: center;
   padding-left: 20%;
   padding-right: 20%;
-  font-size: 8vh;
+  font-size: 35px;
   font-weight: normal;
   padding-top: 60px;
   margin-bottom: 0px;
@@ -386,19 +386,19 @@ body {
   color: black;
   text-align: center;
   background-color: white;
-  width: 20vh;
-  height: 20vh;
-  padding: 3vh;
+  width: 146px;
+  height: 146px;
+  padding: 22px;
   text-transform: none;
   justify-content: center;
   align-items: center;
 }
 .category .menu .grid-menu .arrow {
-  width: 2vh;
-  height: 2vh;
+  width: 14.6px;
+  height: 14.6px;
 }
 .category .menu .grid-menu .illu {
-  height: 5vh;
+  height: 36.5px;
 }
 .category .menu .grid-menu a {
   text-decoration: none;
@@ -406,16 +406,16 @@ body {
   color: black;
 }
 .category .menu .grid-menu p {
-  margin: 1vh;
-  margin-bottom: 2vh;
+  margin: 7.3px;
+  margin-bottom: 14.6px;
 }
 .category .menu .grid-menu:hover {
   color: white;
   background-color: #C8A96A;
 }
 .category .menu .grid-menu:hover .arrow {
-  width: 2vh;
-  height: 2vh;
+  width: 14.6px;
+  height: 14.6px;
   filter: invert(100%);
 }
 .category .menu .grid-menu:hover .illu {
@@ -882,7 +882,7 @@ body {
   padding: 15px 32px;
   text-align: left;
   font-size: 100%;
-  margin-left: 650px;
+  margin-left: 42.5%;
 }
 .more .arrow {
   width: 13px;
