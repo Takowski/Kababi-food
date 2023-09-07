@@ -251,15 +251,14 @@ body {
   background-size: contain;
   display: block;
   background-size: cover;
-  color: white;
-  text-transform: uppercase;
   font-family: "Cormorant Infant", serif;
 }
-.main a {
+.main .main_nav {
   color: white;
   text-decoration: none;
   text-align: center;
   justify-self: center;
+  border: none;
 }
 .main .navbar {
   display: grid;
@@ -267,10 +266,33 @@ body {
   grid-template-columns: auto auto auto;
   height: auto;
 }
+.main .navbar .marque {
+  margin-top: 20px;
+}
 .main .navbar .nav {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-  height: 5%;
+  height: 0px;
+  margin-left: 50px;
+}
+.main .navbar .nav .home {
+  width: 100px;
+}
+.main .navbar .nav .about {
+  width: 100px;
+}
+.main .navbar .nav .page {
+  width: 100px;
+}
+.main .navbar .nav .shop {
+  width: 100px;
+}
+.main .navbar .nav .contact {
+  width: 100px;
+}
+.main .navbar .tel {
+  margin-top: 30px;
+  color: white;
 }
 .main .navbar .reservation {
   display: grid;
@@ -279,6 +301,9 @@ body {
   justify-content: end;
   grid-gap: 1.5em;
   height: 5%;
+}
+.main .navbar .reservation .booking {
+  color: white;
 }
 .main .navbar .reservation .book {
   border-radius: 5px;
@@ -298,6 +323,8 @@ body {
 .main .intro {
   display: grid;
   padding-left: 5%;
+  text-transform: uppercase;
+  color: white;
 }
 .main .intro h1 {
   font-size: 125px;
@@ -320,6 +347,8 @@ body {
   padding: 15px 32px;
   text-align: left;
   font-size: 100%;
+  margin-left: 0px;
+  color: white;
 }
 .main .intro .explore .arrow {
   width: 2vh;
@@ -375,21 +404,22 @@ body {
   color: black;
   text-align: center;
   background-color: white;
-  width: 20vh;
-  height: 20vh;
-  padding: 3vh;
+  width: 146px;
+  height: 146px;
+  padding: 22px;
   text-transform: none;
   justify-content: center;
   align-items: center;
 }
 .category .menu .grid-menu .arrow {
-  width: 2vh;
-  height: 2vh;
+  width: 15px;
+  height: 15px;
 }
 .category .menu .grid-menu .illu {
-  height: 5vh;
+  height: 36.5px;
+  display: grid;
 }
-.category .menu .grid-menu a {
+.category .menu .grid-menu .select {
   text-decoration: none;
   text-align: center;
   color: black;
@@ -410,7 +440,7 @@ body {
 .category .menu .grid-menu:hover .illu {
   filter: brightness(0%) invert(100%);
 }
-.category .menu .grid-menu:hover a {
+.category .menu .grid-menu:hover .select {
   color: white;
   text-decoration: none;
 }
@@ -437,6 +467,7 @@ body {
   width: 15em;
   margin-bottom: -35vh;
   padding-bottom: 5em;
+  margin-bottom: -35vh;
 }
 .category .content .plates .bowl {
   width: 30em;
@@ -448,6 +479,7 @@ body {
   width: 20em;
   margin-bottom: -45vh;
   padding-bottom: 9em;
+  margin-bottom: -45vh;
 }
 
 .about .us .watermark {
@@ -665,6 +697,9 @@ body {
   z-index: 0;
   position: relative;
 }
+.gallery .content .noodles:hover img {
+  filter: brightness(35%);
+}
 .gallery .content .noodles .text {
   height: 400px;
   z-index: 2;
@@ -689,8 +724,7 @@ body {
   filter: invert(100%);
 }
 .gallery .content .noodles img {
-  filter: brightness(35%);
-  z-index: 1;
+  filter: brightness(100%);
 }
 
 a {

@@ -52,6 +52,11 @@
         .noodles {
             z-index:0;
             position:relative;
+            &:hover {
+                img {
+                    filter:brightness(35%);
+                }
+            }
             .text {
                 height:400px;
                 z-index:2;
@@ -76,8 +81,8 @@
                 }
             }
             img {
-                filter:brightness(35%);
-                z-index:1;
+                filter:brightness(100%);
+
             }
             //.filter:hover {
             //    z-index:1;
