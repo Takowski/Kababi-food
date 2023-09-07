@@ -48,28 +48,29 @@
         display: grid;
         grid-template-columns: auto auto auto auto auto auto;
         padding: 5%;
+        
+
         .grid-menu {
             color: black;
             text-align: center;
             background-color: white;
-            width:146px;
-            height:146px;
-            padding:22px;
+            width:20vh;
+            height:20vh;
+            padding:3vh;
             text-transform: none;
             justify-content: center;
             align-items: center;
             
             .arrow {
-                width: 15px;
-                height: 15px;
+                width: 2vh;
+                height: 2vh;
             }
 
             .illu {
-                height: 36.5px;
-                display:grid;
+                height: 5vh;
             }
 
-            .select {
+            a {
                 text-decoration: none;
                 text-align: center;
                 color: black;
@@ -89,7 +90,7 @@
                 .illu {
                     filter:brightness(0%) invert(100%);
                 }
-                .select {
+                a {
                     color: white;
                     text-decoration: none;
                 }
@@ -116,15 +117,11 @@
             align-items: center;
             padding-top: 50px;
             bottom: -150vh;
-<<<<<<< HEAD
             
-=======
->>>>>>> rosa
             .crepes {
                 width: 15em;
                 margin-bottom: -35vh;
                 padding-bottom: 5em;
-                margin-bottom: -35vh;
             }
             .bowl {
                 width: 30em;
@@ -136,7 +133,6 @@
                 width: 20em;
                 margin-bottom: -45vh;
                 padding-bottom: 9em;
-                margin-bottom: -45vh;
             }
         }
     }

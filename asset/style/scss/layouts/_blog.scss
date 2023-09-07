@@ -1,0 +1,112 @@
+.blog {
+    .blog_div {
+        .watermark {
+            align-items: flex-start;
+            font-size: 160px;
+            color: #F5EEE3;
+            position: absolute;
+            z-index: -1;
+            font-family: $font-stack;
+            text-transform: $caps;
+            font-size: 15hv;
+        }
+
+        .title {
+            text-align: center;
+            padding-left: 20%;
+            padding-right: 20%;
+            font-size: 30px;
+            padding-top: 15px;
+            z-index:2;
+            position:relative;
+            h2 {
+                font-family: $font-stack;
+                text-transform: $caps;
+                font-weight: normal;
+                margin-top: 45px;
+                margin-bottom: 0px;
+            }
+
+            .quality {
+                float: right;
+                width: 200px;
+                padding-bottom: 25px;
+                padding-left:50px;
+            }
+        }
+    
+        .subtitle {
+            padding-left: 40%;
+            padding-right: 40%;
+            font-weight: normal;
+            text-transform: none;
+            text-align: center;
+            font-family: $font-stack;
+            font-weight: none;
+            margin-top: 0px;
+        }
+    } 
+      
+    .blog_container{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap:4vw;
+        
+
+        .blog_article {
+            background-color: #FAF6F0;
+            width: 23.90vw;
+            height: 55vh;        
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+            text-align: center;
+            font-family: $font-stack;
+            font-weight: normal;
+            font-size: 20px;
+            color: #000000;
+             .blog_img{
+                margin-top:-20px
+             }
+
+            .blog_cite {
+                display: flex;
+                flex-direction:row ;
+                justify-content: center;
+                align-items:last baseline;
+                gap: 10px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    margin-bottom: -10px;
+                }
+            }
+            .button {
+                border-radius: 5px;
+                background-color: #C8A96A;
+                font-weight: bold;
+                text-transform: $caps;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                text-decoration: none;
+                color: white;
+                .arrow {
+                    width: 2%;
+                    height: 2%;
+                    filter: invert(100%);
+                }
+            }
+            
+            
+        }
+    }
+
+}    
