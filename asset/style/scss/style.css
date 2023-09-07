@@ -639,21 +639,33 @@ body {
   font-weight: none;
   margin-top: 0px;
 }
-.gallery .first_pictures {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-around;
-  padding-left: 125px;
-  padding-right: 125px;
-  padding-bottom: 25px;
+.gallery .content {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-.gallery .second_pictures {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-around;
-  padding-left: 125px;
-  padding-right: 125px;
-  padding-bottom: 25px;
+.gallery .content .break {
+  flex-basis: 100%;
+  height: 0;
+}
+.gallery a {
+  font-family: "Cormorant Infant", serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  border: #2C3034 solid 0.1vh;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 15px 32px;
+  text-align: left;
+  font-size: 100%;
+  margin-left: 650px;
+}
+.gallery a .arrow {
+  width: 13px;
+  height: 13px;
 }
 
 .chefs {
