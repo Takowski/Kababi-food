@@ -637,8 +637,11 @@ body {
   margin-top: 0px;
 }
 .gallery .picutres {
-  display: inline-block;
-  text-align: center;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 footer {
