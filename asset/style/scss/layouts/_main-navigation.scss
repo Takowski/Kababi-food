@@ -8,24 +8,46 @@
     background-size:contain;
     display: block;
     background-size: cover;
-    color: $color-title;
-    text-transform: $caps;
     font-family: $font-stack;
-    a {
+    .main_nav {
         color: $color-title;
         text-decoration: none;
         text-align: center;
         justify-self: center;
+        border:none;
     }
     .navbar {
         display: grid;
         grid-gap: 10vh 10vh;
         grid-template-columns: auto auto auto;
         height: auto;
+        .marque {
+            margin-top:20px;
+        }
         .nav {
             display: grid;
             grid-template-columns: auto auto auto auto auto;
-            height: 5%;
+            height: 0px;
+            margin-left: 50px;
+            .home {
+                width:100px;
+            }
+            .about {
+                width:100px;
+            }
+            .page {
+                width: 100px;
+            }
+            .shop {
+                width: 100px;
+            }
+            .contact {
+                width:100px;
+            }
+        }
+        .tel {
+            margin-top:30px;
+            color:white;
         }
         .reservation {
             display: grid;
@@ -34,6 +56,9 @@
             justify-content: end;
             grid-gap: 1.5em;
             height: 5%;
+            .booking {
+                color: white;
+            }
             .book {
                 border-radius: 5px;
                 border: none;
@@ -54,6 +79,8 @@
     .intro {
         display: grid;
         padding-left: 5%;
+        text-transform: $caps;
+        color: $color-title;
         h1 {
             font-size: 125px;
             font-weight: normal;
@@ -74,6 +101,8 @@
             padding: 15px 32px;
             text-align: left;
             font-size: 100%;
+            margin-left:0px;
+            color: white;
             .arrow {
                 width: 2vh;
                 height: 2vh;
