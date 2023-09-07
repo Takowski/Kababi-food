@@ -472,6 +472,7 @@ body {
   width: 30em;
   border: solid white 2em;
   border-radius: 50%;
+  margin-bottom: -5vh;
 }
 .category .content .plates .eggs {
   width: 20em;
@@ -723,8 +724,173 @@ body {
 .gallery .content .noodles img {
   filter: brightness(100%);
 }
+.gallery .content .sandwich {
+  z-index: 0;
+  position: relative;
+}
+.gallery .content .sandwich:hover img {
+  filter: brightness(35%);
+}
+.gallery .content .sandwich .text {
+  height: 400px;
+  z-index: 2;
+  position: absolute;
+  font-family: "Cormorant Infant", serif;
+  text-align: center;
+  filter: opacity(0%);
+}
+.gallery .content .sandwich .text h4 {
+  padding-top: 100px;
+  font-size: 42px;
+  margin-bottom: 2px;
+}
+.gallery .content .sandwich .text p {
+  font-size: 24px;
+}
+.gallery .content .sandwich .text .arrow {
+  padding-left: 278px;
+}
+.gallery .content .sandwich .text:hover {
+  filter: opacity(100%);
+  filter: invert(100%);
+}
+.gallery .content .sandwich img {
+  filter: brightness(100%);
+}
+.gallery .content .pizza {
+  z-index: 0;
+  position: relative;
+}
+.gallery .content .pizza:hover img {
+  filter: brightness(35%);
+}
+.gallery .content .pizza .text {
+  height: 400px;
+  z-index: 2;
+  position: absolute;
+  font-family: "Cormorant Infant", serif;
+  text-align: center;
+  filter: opacity(0%);
+}
+.gallery .content .pizza .text h4 {
+  padding-top: 100px;
+  font-size: 42px;
+  margin-bottom: 2px;
+}
+.gallery .content .pizza .text p {
+  font-size: 24px;
+}
+.gallery .content .pizza .text .arrow {
+  padding-left: 278px;
+}
+.gallery .content .pizza .text:hover {
+  filter: opacity(100%);
+  filter: invert(100%);
+}
+.gallery .content .pizza img {
+  filter: brightness(100%);
+}
+.gallery .content .bolo {
+  z-index: 0;
+  position: relative;
+}
+.gallery .content .bolo:hover img {
+  filter: brightness(35%);
+}
+.gallery .content .bolo .text {
+  height: 400px;
+  z-index: 2;
+  position: absolute;
+  font-family: "Cormorant Infant", serif;
+  text-align: center;
+  filter: opacity(0%);
+}
+.gallery .content .bolo .text h4 {
+  padding-top: 100px;
+  font-size: 42px;
+  margin-bottom: 2px;
+}
+.gallery .content .bolo .text p {
+  font-size: 24px;
+}
+.gallery .content .bolo .text .arrow {
+  padding-left: 278px;
+}
+.gallery .content .bolo .text:hover {
+  filter: opacity(100%);
+  filter: invert(100%);
+}
+.gallery .content .bolo img {
+  filter: brightness(100%);
+}
+.gallery .content .steak {
+  z-index: 0;
+  position: relative;
+}
+.gallery .content .steak:hover img {
+  filter: brightness(35%);
+}
+.gallery .content .steak .text {
+  height: 400px;
+  z-index: 2;
+  position: absolute;
+  font-family: "Cormorant Infant", serif;
+  text-align: center;
+  filter: opacity(0%);
+}
+.gallery .content .steak .text h4 {
+  padding-top: 100px;
+  font-size: 42px;
+  margin-bottom: 2px;
+}
+.gallery .content .steak .text p {
+  font-size: 24px;
+}
+.gallery .content .steak .text .arrow {
+  padding-left: 278px;
+}
+.gallery .content .steak .text:hover {
+  filter: opacity(100%);
+  filter: invert(100%);
+}
+.gallery .content .steak img {
+  filter: brightness(100%);
+}
+.gallery .content .burger {
+  z-index: 0;
+  position: relative;
+}
+.gallery .content .burger:hover img {
+  filter: brightness(35%);
+}
+.gallery .content .burger .text {
+  height: 400px;
+  z-index: 2;
+  position: absolute;
+  font-family: "Cormorant Infant", serif;
+  text-align: center;
+  filter: opacity(0%);
+}
+.gallery .content .burger .text h4 {
+  padding-top: 100px;
+  font-size: 42px;
+  margin-bottom: 2px;
+}
+.gallery .content .burger .text p {
+  font-size: 24px;
+}
+.gallery .content .burger .text .arrow {
+  padding-left: 600px;
+}
+.gallery .content .burger .text:hover {
+  filter: opacity(100%);
+  filter: invert(100%);
+}
+.gallery .content .burger img {
+  filter: brightness(100%);
+}
 
-a {
+.more {
   font-family: "Cormorant Infant", serif;
   text-transform: uppercase;
   text-decoration: none;
@@ -737,7 +903,7 @@ a {
   font-size: 100%;
   margin-left: 650px;
 }
-a .arrow {
+.more .arrow {
   width: 13px;
   height: 13px;
 }
