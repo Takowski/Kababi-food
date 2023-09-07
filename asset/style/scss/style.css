@@ -251,26 +251,30 @@ body {
   background-size: contain;
   display: block;
   background-size: cover;
-  color: white;
-  text-transform: uppercase;
   font-family: "Cormorant Infant", serif;
 }
-.main a {
+.main .main_nav {
   color: white;
   text-decoration: none;
   text-align: center;
   justify-self: center;
+  border: none;
 }
 .main .navbar {
   display: grid;
-  grid-gap: 10vh 10vh;
+  grid-gap: 30px 30px;
   grid-template-columns: auto auto auto;
-  height: auto;
+  height: 50px;
 }
 .main .navbar .nav {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-  height: 5%;
+  height: 0px;
+  margin-left: 50px;
+  gap: 25px;
+}
+.main .navbar .tel {
+  color: white;
 }
 .main .navbar .reservation {
   display: grid;
@@ -287,8 +291,11 @@ body {
   font-weight: bold;
   margin-left: 20px;
   margin-right: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
 }
 .main .navbar .reservation .arrow {
   width: 10%;
@@ -298,6 +305,8 @@ body {
 .main .intro {
   display: grid;
   padding-left: 5%;
+  text-transform: uppercase;
+  color: white;
 }
 .main .intro h1 {
   font-size: 125px;
@@ -320,6 +329,8 @@ body {
   padding: 15px 32px;
   text-align: left;
   font-size: 100%;
+  margin-left: 0px;
+  color: white;
 }
 .main .intro .explore .arrow {
   width: 2vh;
@@ -348,7 +359,7 @@ body {
   text-align: center;
   padding-left: 20%;
   padding-right: 20%;
-  font-size: 8vh;
+  font-size: 35px;
   font-weight: normal;
   padding-top: 60px;
   margin-bottom: 0px;
@@ -375,19 +386,19 @@ body {
   color: black;
   text-align: center;
   background-color: white;
-  width: 20vh;
-  height: 20vh;
-  padding: 3vh;
+  width: 146px;
+  height: 146px;
+  padding: 22px;
   text-transform: none;
   justify-content: center;
   align-items: center;
 }
 .category .menu .grid-menu .arrow {
-  width: 2vh;
-  height: 2vh;
+  width: 14.6px;
+  height: 14.6px;
 }
 .category .menu .grid-menu .illu {
-  height: 5vh;
+  height: 36.5px;
 }
 .category .menu .grid-menu a {
   text-decoration: none;
@@ -395,16 +406,16 @@ body {
   color: black;
 }
 .category .menu .grid-menu p {
-  margin: 1vh;
-  margin-bottom: 2vh;
+  margin: 7.3px;
+  margin-bottom: 14.6px;
 }
 .category .menu .grid-menu:hover {
   color: white;
   background-color: #C8A96A;
 }
 .category .menu .grid-menu:hover .arrow {
-  width: 2vh;
-  height: 2vh;
+  width: 14.6px;
+  height: 14.6px;
   filter: invert(100%);
 }
 .category .menu .grid-menu:hover .illu {
@@ -609,7 +620,7 @@ body {
 }
 
 .gallery {
-  height: 1200px;
+  height: 1250px;
 }
 .gallery .header {
   height: 200px;
@@ -651,16 +662,216 @@ body {
 }
 .gallery .content {
   display: flex;
-  align-items: stretch;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 30px;
+  margin-bottom: 75px;
 }
 .gallery .content .break {
   flex-basis: 100%;
-  height: 0;
+  height: 0px;
 }
-.gallery a {
+.gallery .content .noodles {
+  z-index: 0;
+  position: relative;
+}
+.gallery .content .noodles:hover img {
+  filter: brightness(35%);
+}
+.gallery .content .noodles .text {
+  height: 400px;
+  z-index: 2;
+  position: absolute;
+  font-family: "Cormorant Infant", serif;
+  text-align: center;
+  filter: opacity(0%);
+}
+.gallery .content .noodles .text h4 {
+  padding-top: 100px;
+  font-size: 42px;
+  margin-bottom: 2px;
+}
+.gallery .content .noodles .text p {
+  font-size: 24px;
+}
+.gallery .content .noodles .text .arrow {
+  padding-left: 600px;
+}
+.gallery .content .noodles .text:hover {
+  filter: opacity(100%);
+  filter: invert(100%);
+}
+.gallery .content .noodles img {
+  filter: brightness(100%);
+}
+.gallery .content .sandwich {
+  z-index: 0;
+  position: relative;
+}
+.gallery .content .sandwich:hover img {
+  filter: brightness(35%);
+}
+.gallery .content .sandwich .text {
+  height: 400px;
+  z-index: 2;
+  position: absolute;
+  font-family: "Cormorant Infant", serif;
+  text-align: center;
+  filter: opacity(0%);
+}
+.gallery .content .sandwich .text h4 {
+  padding-top: 100px;
+  font-size: 42px;
+  margin-bottom: 2px;
+}
+.gallery .content .sandwich .text p {
+  font-size: 24px;
+}
+.gallery .content .sandwich .text .arrow {
+  padding-left: 278px;
+}
+.gallery .content .sandwich .text:hover {
+  filter: opacity(100%);
+  filter: invert(100%);
+}
+.gallery .content .sandwich img {
+  filter: brightness(100%);
+}
+.gallery .content .pizza {
+  z-index: 0;
+  position: relative;
+}
+.gallery .content .pizza:hover img {
+  filter: brightness(35%);
+}
+.gallery .content .pizza .text {
+  height: 400px;
+  z-index: 2;
+  position: absolute;
+  font-family: "Cormorant Infant", serif;
+  text-align: center;
+  filter: opacity(0%);
+}
+.gallery .content .pizza .text h4 {
+  padding-top: 100px;
+  font-size: 42px;
+  margin-bottom: 2px;
+}
+.gallery .content .pizza .text p {
+  font-size: 24px;
+}
+.gallery .content .pizza .text .arrow {
+  padding-left: 278px;
+}
+.gallery .content .pizza .text:hover {
+  filter: opacity(100%);
+  filter: invert(100%);
+}
+.gallery .content .pizza img {
+  filter: brightness(100%);
+}
+.gallery .content .bolo {
+  z-index: 0;
+  position: relative;
+}
+.gallery .content .bolo:hover img {
+  filter: brightness(35%);
+}
+.gallery .content .bolo .text {
+  height: 400px;
+  z-index: 2;
+  position: absolute;
+  font-family: "Cormorant Infant", serif;
+  text-align: center;
+  filter: opacity(0%);
+}
+.gallery .content .bolo .text h4 {
+  padding-top: 100px;
+  font-size: 42px;
+  margin-bottom: 2px;
+}
+.gallery .content .bolo .text p {
+  font-size: 24px;
+}
+.gallery .content .bolo .text .arrow {
+  padding-left: 278px;
+}
+.gallery .content .bolo .text:hover {
+  filter: opacity(100%);
+  filter: invert(100%);
+}
+.gallery .content .bolo img {
+  filter: brightness(100%);
+}
+.gallery .content .steak {
+  z-index: 0;
+  position: relative;
+}
+.gallery .content .steak:hover img {
+  filter: brightness(35%);
+}
+.gallery .content .steak .text {
+  height: 400px;
+  z-index: 2;
+  position: absolute;
+  font-family: "Cormorant Infant", serif;
+  text-align: center;
+  filter: opacity(0%);
+}
+.gallery .content .steak .text h4 {
+  padding-top: 100px;
+  font-size: 42px;
+  margin-bottom: 2px;
+}
+.gallery .content .steak .text p {
+  font-size: 24px;
+}
+.gallery .content .steak .text .arrow {
+  padding-left: 278px;
+}
+.gallery .content .steak .text:hover {
+  filter: opacity(100%);
+  filter: invert(100%);
+}
+.gallery .content .steak img {
+  filter: brightness(100%);
+}
+.gallery .content .burger {
+  z-index: 0;
+  position: relative;
+}
+.gallery .content .burger:hover img {
+  filter: brightness(35%);
+}
+.gallery .content .burger .text {
+  height: 400px;
+  z-index: 2;
+  position: absolute;
+  font-family: "Cormorant Infant", serif;
+  text-align: center;
+  filter: opacity(0%);
+}
+.gallery .content .burger .text h4 {
+  padding-top: 100px;
+  font-size: 42px;
+  margin-bottom: 2px;
+}
+.gallery .content .burger .text p {
+  font-size: 24px;
+}
+.gallery .content .burger .text .arrow {
+  padding-left: 600px;
+}
+.gallery .content .burger .text:hover {
+  filter: opacity(100%);
+  filter: invert(100%);
+}
+.gallery .content .burger img {
+  filter: brightness(100%);
+}
+
+.more {
   font-family: "Cormorant Infant", serif;
   text-transform: uppercase;
   text-decoration: none;
@@ -671,9 +882,9 @@ body {
   padding: 15px 32px;
   text-align: left;
   font-size: 100%;
-  margin-left: 650px;
+  margin-left: 42.5%;
 }
-.gallery a .arrow {
+.more .arrow {
   width: 13px;
   height: 13px;
 }
