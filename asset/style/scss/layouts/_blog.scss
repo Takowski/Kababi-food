@@ -48,26 +48,27 @@
     } 
       
     .blog_container{
-        
+        margin-top: 20vh;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
         gap:4vw;
         
 
         .blog_article {
             background-color: #FAF6F0;
             width: 23.90vw;
-            height: 55vh;        
+            height: 53vh;        
             display: flex;
             flex-direction: column;
-            
             align-items: center;
             text-align: center;
             font-family: $font-stack;
             font-weight: normal;
             font-size: 20px;
             color: #000000;
+            
              .blog_img{
                 margin-top:-20px
              }
@@ -84,29 +85,47 @@
                     margin-right: 10px;
                     margin-bottom: -10px;
                 }
-            }
-            .button {
-                border-radius: 5px;
-                background-color: #C8A96A;
-                font-weight: bold;
-                text-transform: $caps;
-                margin-left: 20px;
-                margin-right: 20px;
-                padding-left: 30px;
-                padding-right: 30px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                text-decoration: none;
-                color: white;
-                .arrow {
-                    width: 2%;
-                    height: 2%;
-                    filter: invert(100%);
-                }
-            }
-            
-            
-        }
+            }    
+            .blog_readmore {
+                    
+                        border-radius: 5px;
+                        background-color: white;
+                        font-weight: bold;
+                        text-transform: $caps;
+                        margin-left: 20px;
+                        margin-right: 20px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        text-decoration: none;
+                        color: black;
+                        &:hover {
+                            background-color: #C8A96A;
+                            color: white;
+                        }
+                            
+
+                            
+                    
+                        }
+                        
+                       
+        }   
     }
+            ul{ 
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-end;
+                list-style-type: none;
+                margin-top: 10vh;
+                margin-bottom: 10vh;
+
+                img {filter : grayscale(75%);}
+
+            }
+
+
 
 }    
