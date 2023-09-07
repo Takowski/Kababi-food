@@ -300,13 +300,13 @@ body {
   padding-left: 5%;
 }
 .main .intro h1 {
-  font-size: 18vh;
+  font-size: 34px;
   font-weight: normal;
   text-align: left;
   display: block;
   width: 50%;
   line-height: 1em;
-  margin-bottom: 3%;
+  margin-bottom: 25px;
 }
 .main .intro h1 img.quality {
   -o-object-position: right top;
@@ -348,7 +348,7 @@ body {
   text-align: center;
   padding-left: 20%;
   padding-right: 20%;
-  font-size: 8vh;
+  font-size: 35px;
   font-weight: normal;
   padding-top: 60px;
   margin-bottom: 0px;
@@ -467,8 +467,9 @@ body {
 }
 .about .us .title .quality {
   float: right;
-  width: 15%;
-  padding-bottom: 10%;
+  width: 200px;
+  padding-bottom: 25px;
+  padding-left: 50px;
 }
 .about .us .subtitle {
   padding-left: 40%;
@@ -484,9 +485,9 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   padding-left: 20%;
-  padding-top: 2%;
+  padding-top: 0px;
   padding-right: 20%;
-  padding-bottom: 2%;
+  padding-bottom: 75px;
   grid-gap: 1em;
   width: 100%;
 }
@@ -496,8 +497,10 @@ body {
 .about .us .abtus .discover .latin {
   font-family: "Cormorant Infant", serif;
   font-weight: none;
-  font-size: 2em;
+  font-size: 34px;
   width: 85%;
+  margin-top: 50px;
+  margin-bottom: 75px;
 }
 .about .us .abtus .discover .button {
   border-radius: 5px;
@@ -538,7 +541,7 @@ body {
   text-align: center;
   padding-left: 20%;
   padding-right: 20%;
-  font-size: 8vh;
+  font-size: 40px;
   font-weight: normal;
   padding-top: 110px;
   margin-bottom: 0px;
@@ -614,7 +617,7 @@ body {
   padding-left: 20%;
   padding-right: 20%;
   font-size: 35px;
-  padding-top: 15px;
+  padding-top: 65 px;
   z-index: 1;
   position: relative;
 }
@@ -636,9 +639,80 @@ body {
   font-weight: none;
   margin-top: 0px;
 }
-.gallery .picutres {
-  display: inline-block;
+.gallery .first_pictures {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  padding-left: 125px;
+  padding-right: 125px;
+  padding-bottom: 25px;
+}
+.gallery .second_pictures {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  padding-left: 125px;
+  padding-right: 125px;
+  padding-bottom: 25px;
+}
+
+.chefs {
+  font-family: "Cormorant Infant", serif;
+  background: radial-gradient(circle, rgb(50, 50, 50) 0%, rgb(38, 38, 38) 35%, rgb(0, 0, 0) 100%);
+  height: 750px;
+}
+.chefs .watermark {
+  font-size: 160px;
+  color: #212121;
+  position: absolute;
+  z-index: 0;
+  text-transform: uppercase;
+  padding-top: 45px;
+}
+.chefs .title {
   text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 34px;
+  font-weight: normal;
+  padding-top: 110px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  z-index: 2;
+  position: relative;
+  color: white;
+}
+.chefs h2 {
+  font-family: "Cormorant Infant", serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-top: 90px;
+  margin-top: 45px;
+  margin-bottom: 0px;
+}
+.chefs .subtitle {
+  padding-left: 40%;
+  padding-right: 40%;
+  font-weight: normal;
+  text-transform: none;
+  text-align: center;
+  font-family: "Cormorant Infant", serif;
+  font-weight: none;
+  margin-top: 0px;
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+.chefs .cooks {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding-top: 100px;
+  justify-content: space-around;
+  padding-right: 270px;
+  padding-left: 270px;
+}
+.chefs .cooks .guy img {
+  height: 300px;
 }
 
 footer {
