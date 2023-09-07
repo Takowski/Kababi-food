@@ -609,7 +609,7 @@ body {
 }
 
 .gallery {
-  height: 1300px;
+  height: 1250px;
 }
 .gallery .header {
   height: 200px;
@@ -654,12 +654,43 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 27px;
-  margin-bottom: 80px;
+  gap: 30px;
+  margin-bottom: 75px;
 }
 .gallery .content .break {
   flex-basis: 100%;
-  height: 0;
+  height: 0px;
+}
+.gallery .content .noodles {
+  z-index: 0;
+  position: relative;
+}
+.gallery .content .noodles .text {
+  height: 400px;
+  z-index: 2;
+  position: absolute;
+  font-family: "Cormorant Infant", serif;
+  text-align: center;
+  filter: opacity(0%);
+}
+.gallery .content .noodles .text h4 {
+  padding-top: 100px;
+  font-size: 42px;
+  margin-bottom: 2px;
+}
+.gallery .content .noodles .text p {
+  font-size: 24px;
+}
+.gallery .content .noodles .text .arrow {
+  padding-left: 600px;
+}
+.gallery .content .noodles .text:hover {
+  filter: opacity(100%);
+  filter: invert(100%);
+}
+.gallery .content .noodles img {
+  filter: brightness(35%);
+  z-index: 1;
 }
 
 a {
