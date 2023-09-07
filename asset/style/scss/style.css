@@ -262,36 +262,18 @@ body {
 }
 .main .navbar {
   display: grid;
-  grid-gap: 10vh 10vh;
+  grid-gap: 30px 30px;
   grid-template-columns: auto auto auto;
-  height: auto;
-}
-.main .navbar .marque {
-  margin-top: 20px;
+  height: 50px;
 }
 .main .navbar .nav {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   height: 0px;
   margin-left: 50px;
-}
-.main .navbar .nav .home {
-  width: 100px;
-}
-.main .navbar .nav .about {
-  width: 100px;
-}
-.main .navbar .nav .page {
-  width: 100px;
-}
-.main .navbar .nav .shop {
-  width: 100px;
-}
-.main .navbar .nav .contact {
-  width: 100px;
+  gap: 25px;
 }
 .main .navbar .tel {
-  margin-top: 30px;
   color: white;
 }
 .main .navbar .reservation {
@@ -302,9 +284,6 @@ body {
   grid-gap: 1.5em;
   height: 5%;
 }
-.main .navbar .reservation .booking {
-  color: white;
-}
 .main .navbar .reservation .book {
   border-radius: 5px;
   border: none;
@@ -312,8 +291,11 @@ body {
   font-weight: bold;
   margin-left: 20px;
   margin-right: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
 }
 .main .navbar .reservation .arrow {
   width: 10%;
