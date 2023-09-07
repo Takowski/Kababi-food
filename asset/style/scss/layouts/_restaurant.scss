@@ -1,5 +1,5 @@
 .gallery {
-    height:1200px;
+    height:1300px;
     .header {
         height:200px;
         .watermark {
@@ -40,13 +40,15 @@
     }
     .content {
         display: flex;
-        align-items: stretch;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        gap: 27px;
+        margin-bottom:80px;
         .break {
             flex-basis: 100%;
             height: 0;
+        }
         }
     }
     
@@ -81,5 +83,4 @@
             width: 13px;
             height:13px;
         }
-    }
 }

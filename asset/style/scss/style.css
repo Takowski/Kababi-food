@@ -609,7 +609,7 @@ body {
 }
 
 .gallery {
-  height: 1200px;
+  height: 1300px;
 }
 .gallery .header {
   height: 200px;
@@ -651,16 +651,18 @@ body {
 }
 .gallery .content {
   display: flex;
-  align-items: stretch;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 27px;
+  margin-bottom: 80px;
 }
 .gallery .content .break {
   flex-basis: 100%;
   height: 0;
 }
-.gallery a {
+
+a {
   font-family: "Cormorant Infant", serif;
   text-transform: uppercase;
   text-decoration: none;
@@ -673,7 +675,7 @@ body {
   font-size: 100%;
   margin-left: 650px;
 }
-.gallery a .arrow {
+a .arrow {
   width: 13px;
   height: 13px;
 }
